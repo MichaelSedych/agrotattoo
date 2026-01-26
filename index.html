@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АГРОТАТУШКИ</title>
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Подключение внешнего CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+
+    <main class="page__container">
+        
+        <header class="header">
+            <div class="header__logo">АГРОТАТУШКИ</div>
+            
+            <!-- Кнопка Бургера -->
+            <button class="burger-btn" id="burgerBtn">
+                <span></span><span></span><span></span>
+            </button>
+
+            <!-- Навигация -->
+            <nav class="header__nav" id="navMenu">
+                <a href="#product" class="header__link">О продукте</a>
+                <a href="#features" class="header__link">Преимущества</a>
+                <a href="#partners" class="header__link">Партнёры</a>
+                <a href="#contacts" class="header__link">Контакты</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <h1 class="hero__title">АГРОТАТУШКИ</h1>
+                <p class="hero__subtitle">ФЕРМА НА РУКЕ</p>
+            </div>
+        </section>
+
+        <!-- О ПРОДУКТЕ -->
+        <section id="product" class="section about">
+            <div class="section__header">
+                <h2 class="section__title">О продукте</h2>
+            </div>
+            
+            <div class="about__grid">
+                <div class="about__text-block">
+                    <p class="about__text">
+                        Конечный продукт проекта — это комплект временных татуировок 
+                        с изображениями объектов сельскохозяйственной тематики
+                        и мобильное приложение «Агротатушки» с функцией дополненной реальности (AR)
+                    <p class="about__text">
+                        Проект направлен на развитие познавательной активности у детей через игру, а также популяризацию сельского хозяйства в увлекательной форме.
+                    </p>
+                </div>
+                
+                <div class="slider-simple">
+                    <div class="slider-simple__container">
+                        <!-- Картинка Слайдера -->
+                        <img id="sliderImage" src="" alt="Слайд" class="slider-simple__img">
+                        
+                        <button class="slider-btn slider-btn--prev" id="prevBtn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        </button>
+                        <button class="slider-btn slider-btn--next" id="nextBtn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+                        
+                        <div class="slider-dots" id="sliderDots"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПРЕИМУЩЕСТВА -->
+        <section id="features" class="section features">
+            <div class="section__header">
+                <h2 class="section__title">ОБЛАСТЬ ПРИМЕНЕНИЯ ПРОДУКТА</h2>
+            </div>
+            <ul class="features__list">
+                <li class="features__item">
+                    <!-- Иконка без кружка-обертки -->
+                    <svg class="features__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span class="features__text">Образование и просвещение</span>
+                </li>
+                <li class="features__item">
+                    <svg class="features__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <span class="features__text">Агропромышленная сфера и агромаркетинг</span>
+                </li>
+                <li class="features__item">
+                    <svg class="features__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2v2"></path><path d="M12 20v2"></path><path d="M4.93 4.93l1.41 1.41"></path>
+                        <path d="M17.66 17.66l1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path>
+                        <path d="M6.34 17.66l-1.41 1.41"></path><path d="M19.07 4.93l-1.41 1.41"></path>
+                        <circle cx="12" cy="12" r="5"></circle>
+                    </svg>
+                    <span class="features__text">Детский досуг и развлечения</span>
+                </li>
+                <li class="features__item">
+                    <svg class="features__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    <span class="features__text">Цифровые и AR-технологии</span>
+                </li>
+            </ul>
+        </section>
+        
+        <!-- ОБЛАСТИ ПРИМЕНЕНИЯ -->
+        <section class="section">
+             <div class="section__header"><h2 class="section__title">РЫНОК И ПОТРЕБИТЕЛЬ</h2></div>
+             <div class="scopes__grid">
+                 
+                 <!-- Карточка 1 -->
+                 <div class="scopes__card">
+                     <div class="scopes__img-wrapper">
+                         <img src="img/adv-1.png" alt="Образование и просвещение" class="scopes__img">
+                     </div>
+                     <span>Использование в школах, агроклассах, кружках, музеях, агропарках и экостанциях как часть программ 
+                        по агробиологии, экологии и технологиям;</span>
+                 </div>
+                 
+                 <!-- Карточка 2 -->
+                 <div class="scopes__card">
+                     <div class="scopes__img-wrapper">
+                         <img src="img/adv-2.png" alt="Детский досуг и развлечения" class="scopes__img">
+                     </div>
+                     <span>Применение в домашних условиях, 
+                        на праздниках, в лагерях, центрах развития и на выставках 
+                        для вовлекающей игры и обучения;
+                     </span>
+                 </div>
+                 
+                 <!-- Карточка 3 -->
+                 <div class="scopes__card">
+                     <div class="scopes__img-wrapper">
+                         <img src="img/adv-3.png" alt="Агропромышленная сфера и агромаркетинг" class="scopes__img">
+                     </div>
+                     <span>Использование агрокомпаниями и производителями сельхозпродукции в качестве интерактивного мерча, подарков, сувениров или образовательных материалов на выставках и ярмарках;</span>
+                 </div>
+                 
+                 <!-- Карточка 4 -->
+                 <div class="scopes__card">
+                     <div class="scopes__img-wrapper">
+                         <img src="img/adv-4.png" alt="Цифровые и AR-технологии" class="scopes__img">
+                     </div>
+                     <span>Внедрение в сферу edutainment (образование + развлечение) как пример успешной интеграции AR 
+                        в детские продукты.
+                     </span>
+                 </div>
+                 
+             </div>
+        </section>
+        
+        <!-- ПАРТНЕРЫ -->
+        <section id="partners" class="section">
+             <div class="section__header"><h2 class="section__title">Партнеры</h2></div>
+             <div class="partners__wrapper">
+                 <div class="partners__list">
+                     <!-- Партнер 1 -->
+                     <div class="partners__item">
+                         <div class="partners__logo-box">
+                             <img src="img/partner1.SVG" alt="Фонд Содействия" class="partners__logo-img">
+                         </div>
+                         <p style="font-size: 14px; line-height: 1.5;">
+                            Проект создан при поддержке ФГБУ «Фонд содействия развитию малых форм предприятий в научно-технической сфере» в рамках программы «Студенческий стартап».
+                         </p>
+                     </div>
+                     <!-- Партнер 2 -->
+                     <div class="partners__item">
+                         <div class="partners__logo-box">
+                             <img src="img/partner2.SVG" alt="Платформа" class="partners__logo-img">
+                         </div>
+                         <p style="font-size: 14px; line-height: 1.5;">
+                            Платформа университетского технологического предпринимательства
+                         </p>
+                     </div>
+                 </div>
+             </div>
+        </section>
+
+        <!-- КОНТАКТЫ -->
+        <section id="contacts" class="section" style="padding: 0; border-top: none;">
+            <div class="contacts__grid">
+                <div class="contacts__info">
+                    <h2 class="section__title" style="text-align: left;">Контакты</h2>
+                    <div class="contacts__person">
+                        <p style="color:#666; font-size:14px; margin-bottom: 5px;">Контактное лицо:</p>
+                        <p class="contacts__value">Анисенко Евгений Олегович</p>
+                        <a href="tel:+79085551586" style="color:#000; font-size:20px;">+7 908 555-15-86</a>
+                    </div>
+                    <div style="margin-top:30px;">
+                        <p><strong>ООО «АГРОКОД»</strong></p>
+                        <p style="color:#666; font-size: 14px;">410035, Саратовская область, г. Саратов, улица имени П.Ф. Батавина, 9А кв. 86</p>
+                        <p style="color:#666; font-size: 12px; margin-top: 10px;">
+                            ОГРН:1256400013583 / ИНН: 6453181324 / КПП: 645301001
+                        </p>
+                    </div>
+                </div>
+                <div class="contacts__map-wrapper" style="background:#ddd; min-height:400px;">
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=46.004298%2C51.612965&z=17&pt=46.004298,51.612965,pm2rdm" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="min-height: 400px; display: block;"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            © 2025 ООО «АГРОКОД»
+        </footer>
+
+    </main>
+
+    <!-- Подключение внешнего JS -->
+    <script src="script.js"></script>
+</body>
+</html>
